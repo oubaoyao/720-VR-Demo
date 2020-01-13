@@ -1,0 +1,1172 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NetworkCommonTools</name>
+    </assembly>
+    <members>
+        <member name="T:NetworkCommonTools.ConsoleDebug">
+            <summary>
+            控制台输出
+            </summary>
+        </member>
+        <member name="T:NetworkCommonTools.DebugControl">
+            <summary>
+            自定义Debug方式
+            </summary>
+        </member>
+        <member name="P:NetworkCommonTools.DebugControl.Debug_OutputPath">
+            <summary>
+            Debug文件的输出路径(默认是"Debug/")
+            </summary>
+        </member>
+        <member name="M:NetworkCommonTools.DebugControl.LogNormal(System.String)">
+            <summary>
+            Normal类型的Debug
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:NetworkCommonTools.DebugControl.LogWarnning(System.String)">
+            <summary>
+            Warnning类型的Debug
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:NetworkCommonTools.DebugControl.LogError(System.String)">
+            <summary>
+            Error类型的Debug
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:NetworkCommonTools.DebugControl.LogTest(System.String)">
+            <summary>
+             TestDebug类型的Debug(默认是用Normal方式）
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="T:NetworkCommonTools.LiteNetLibEngine.OperateCode">
+            <summary>
+            操作类的类型
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.OperateCode.MessageProcessControl">
+            <summary>
+            信息操作处理类
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.OperateCode.MaxValue">
+            <summary>
+            OperateCode的最大值
+            </summary>
+        </member>
+        <member name="T:NetworkCommonTools.LiteNetLibEngine.ParmaterCode">
+            <summary>
+            数据包内参数的类型
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.ParmaterCode.EventType">
+            <summary>
+            请求和和回复的事件类型
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.ParmaterCode.ConnectedKey">
+            <summary>
+            连接的关键字
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.ParmaterCode.IPAddress">
+            <summary>
+            IP地址
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.ParmaterCode.PacketType">
+            <summary>
+            数据发送类型
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.ParmaterCode.Message">
+            <summary>
+            消息
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.ParmaterCode.DeliveryMethod">
+            <summary>
+            消息的传递方式
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.ParmaterCode.UserID">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.ParmaterCode.UserInfo">
+            <summary>
+            用户数据
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.ParmaterCode.RoomID">
+            <summary>
+            房间ID
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.ParmaterCode.RoomInfo">
+            <summary>
+            房间数据
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.ParmaterCode.MessageProcessControlCode">
+            <summary>
+            消息处理的操作类型
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.ParmaterCode.MaxValue">
+            <summary>
+            ParmaterCode的最大值
+            </summary>
+        </member>
+        <member name="T:NetworkCommonTools.LiteNetLibEngine.MessageProcessControlCode">
+            <summary>
+             消息处理的操作类中要处理的操作类型
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.MessageProcessControlCode.ForwardingMsg">
+            <summary>
+            转发消息
+            </summary>
+        </member>
+        <member name="T:NetworkCommonTools.LiteNetLibEngine.IPEndPointPacket">
+            <summary>
+            将IPEndPoint转换成Json时用到的中介类
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.IPEndPointPacket.IP">
+            <summary>
+            IP地址
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.IPEndPointPacket.Port">
+            <summary>
+            端口号
+            </summary>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.IPEndPointPacket.ToIPEndPoint">
+            <summary>
+            转换回IPEndPoint
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.IPEndPointPacket.ToString">
+            <summary>
+            显示ip地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:NetworkCommonTools.LiteNetLibEngine.IPEndPointExtend">
+            <summary>
+            IPEndPoint的扩展类
+            </summary>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.IPEndPointExtend.IPEndPointToJson(System.Net.IPEndPoint)">
+            <summary>
+            将IPEndPoint转换成Json
+            </summary>
+            <param name="iPEndPoint"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.IPEndPointExtend.IPEndPointToPacket(System.Net.IPEndPoint)">
+            <summary>
+            将IPEndPoint转换成IPEndPointPacket
+            </summary>
+            <param name="iPEndPoint"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NetworkCommonTools.LiteNetLibEngine.PacketType">
+            <summary>
+            数据包类型
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.PacketType.System">
+            <summary>
+            发送到底层
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.PacketType.Data">
+            <summary>
+            发送到前端
+            </summary>
+        </member>
+        <member name="T:NetworkCommonTools.LiteNetLibEngine.EventType">
+            <summary>
+            事件类型
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.EventType.Response">
+            <summary>
+            回复
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.EventType.Request">
+            <summary>
+            请求
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.EventType.Agree">
+            <summary>
+            同意
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.EventType.Reject">
+            <summary>
+            拒绝
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.EventType.Cancel">
+            <summary>
+            取消
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.EventType.Error">
+            <summary>
+            错误
+            </summary>
+        </member>
+        <member name="T:NetworkCommonTools.LiteNetLibEngine.DisconnectedType">
+            <summary>
+            断线类型
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.DisconnectedType.Self">
+            <summary>
+            自身断开
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.DisconnectedType.Disconnected">
+            <summary>
+            网络原因
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.DisconnectedType.ServerRequest">
+            <summary>
+            服务器强制踢出
+            </summary>
+        </member>
+        <member name="T:NetworkCommonTools.LiteNetLibEngine.HandleBase">
+            <summary>
+            消息处理基类
+            </summary>
+        </member>
+        <member name="P:NetworkCommonTools.LiteNetLibEngine.HandleBase.OperateHandleCode">
+            <summary>
+            Hanlde的类型
+            </summary>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.HandleBase.OnReceiveProcess(NetworkCommonTools.LiteNetLibEngine.INetEngine,LiteNetLib.NetPeer,Proto.OperationResponse)">
+            <summary>
+            接收普通的信息（已连接状态）
+            </summary>
+            <param name="netEngine"></param>
+            <param name="netPeer"></param>
+            <param name="operation"></param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.HandleBase.OnUnconnectedRequestProcess(NetworkCommonTools.LiteNetLibEngine.INetEngine,System.Net.IPEndPoint,Proto.OperationResponse)">
+            <summary>
+            接收请求的信息（广播方式）
+            </summary>
+            <param name="netEngine"></param>
+            <param name="endPoint"></param>
+            <param name="operation"></param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.HandleBase.OnUnconnectedResponseProcess(NetworkCommonTools.LiteNetLibEngine.INetEngine,System.Net.IPEndPoint,Proto.OperationResponse)">
+            <summary>
+            接收回复的信息（广播方式）
+            </summary>
+            <param name="netEngine"></param>
+            <param name="endPoint"></param>
+            <param name="operation"></param>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.HandleManager.System_HandleDic">
+            <summary>
+            保存系统的Handle类的列表
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.HandleManager.Data_HandleDic">
+            <summary>
+            保存事件的Handle类的列表
+            </summary>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.HandleManager.RegisterAll(NetworkCommonTools.LiteNetLibEngine.INetEngine)">
+            <summary>
+             实例化所有Handle类
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.HandleManager.AddHandle(NetworkCommonTools.LiteNetLibEngine.PacketType,NetworkCommonTools.LiteNetLibEngine.HandleBase)">
+            <summary>
+            添加Handle类
+            </summary>
+            <param name="packetType"></param>
+            <param name="handle"></param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.HandleManager.RemoveHandle(NetworkCommonTools.LiteNetLibEngine.PacketType,NetworkCommonTools.LiteNetLibEngine.HandleBase)">
+            <summary>
+            移除Handle类
+            </summary>
+            <param name="packetType"></param>
+            <param name="handle"></param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.Handle.MessageProcessControlHandle.ForwardingMsg(NetworkCommonTools.LiteNetLibEngine.INetEngine,LiteNetLib.NetPeer,Proto.OperationResponse)">
+            <summary>
+            转发消息
+            </summary>
+            <param name="netEngine"></param>
+            <param name="netPeer"></param>
+            <param name="operation"></param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.INetEngine.CheckLoginKey(System.String)">
+            <summary>
+            检测key是否与本地相一致
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.INetEngine.ReceiveEvent(System.String,NetworkCommonTools.LiteNetLibEngine.EventType,System.Net.IPEndPoint,System.Object[])">
+             <summary>
+            接收处理类的回调事件信息
+             </summary>
+             <param name="controlCode">处理类的操作类型</param>
+             <param name="eventType">回调事件的类型</param>
+             <param name="endPoint">发送者的IP</param>
+             <param name="values">接收的数据</param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.INetEngine.Send(Proto.OperationResponse,LiteNetLib.NetPeer,LiteNetLib.DeliveryMethod)">
+            <summary>
+            给本地连接并且指定的用户发送消息
+            </summary>
+            <param name="operationResponse"></param>
+            <param name="peer"></param>
+            <param name="deliveryMethod"></param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.INetEngine.Send(Proto.OperationResponse,System.Net.IPEndPoint,LiteNetLib.DeliveryMethod)">
+            <summary>
+            给本地连接并且指定IP的用户发送消息
+            </summary>
+            <param name="operationResponse"></param>
+            <param name="remoteEndPoint"></param>
+            <param name="deliveryMethod"></param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.INetEngine.SendToAll(Proto.OperationResponse,LiteNetLib.NetPeer,LiteNetLib.DeliveryMethod)">
+            <summary>
+            发送消息到本地连接的所有用户
+            </summary>
+            <param name="operationResponse"></param>
+            <param name="excludePeer"></param>
+            <param name="deliveryMethod"></param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.INetEngine.SendDiscoveryRequest(Proto.OperationResponse,System.Int32)">
+            <summary>
+            发送请求信息（广播方式无需连接）
+            </summary>
+            <param name="operationResponse">发送的消息</param>
+            <param name="port">可指定的端口(-1默认是向服务器端口发送）</param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.INetEngine.SendDiscoveryResponse(Proto.OperationResponse,System.Net.IPEndPoint)">
+            <summary>
+            发送回复消息（广播方式无需连接）
+            </summary>
+            <param name="operationResponse">发送的消息</param>
+            <param name="remoteEndPoint">可指定的IP</param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.INetEngine.SendToSystem(Proto.OperationResponse,LiteNetLib.NetPeer,LiteNetLib.DeliveryMethod)">
+            <summary>
+            给本地连接并且指定的用户发送消息（系统端）
+            </summary>
+            <param name="operationResponse"></param>
+            <param name="peer"></param>
+            <param name="deliveryMethod"></param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.INetEngine.SendToSystem(Proto.OperationResponse,System.Net.IPEndPoint,LiteNetLib.DeliveryMethod)">
+            <summary>
+            给本地连接并且指定IP的用户发送消息（系统端）
+            </summary>
+            <param name="operationResponse"></param>
+            <param name="remoteEndPoint"></param>
+            <param name="deliveryMethod"></param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.INetEngine.SendToAllSystem(Proto.OperationResponse,LiteNetLib.NetPeer,LiteNetLib.DeliveryMethod)">
+            <summary>
+            发送消息到本地连接的所有用户（系统端）
+            </summary>
+            <param name="operationResponse">发送的消息</param>
+            <param name="excludePeer">不向这个玩家发送消息</param>
+            <param name="deliveryMethod">发送的方式</param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.INetEngine.SendDiscoveryRequestToSystem(Proto.OperationResponse,System.Int32)">
+            <summary>
+            发送请求信息（广播方式无需连接，系统端）
+            </summary>
+            <param name="operationResponse">发送的消息</param>
+            <param name="port">可指定的端口(-1默认是向服务器端口发送）</param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.INetEngine.SendDiscoveryResponseToSystem(Proto.OperationResponse,System.Net.IPEndPoint)">
+            <summary>
+            发送回复消息（广播方式无需连接，系统端）
+            </summary>
+            <param name="operationResponse">发送的消息</param>
+            <param name="remoteEndPoint">可指定的IP</param>
+        </member>
+        <member name="T:NetworkCommonTools.LiteNetLibEngine.ConnectState">
+            <summary>
+            连接的状态
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.ConnectState.Disconnected">
+            <summary>
+            断开状态
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.ConnectState.Running">
+            <summary>
+            网络连接开启状态
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.ConnectState.Connected">
+            <summary>
+            连接服务器状态
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.LiteNetLibEngine.ConnectState.Pause">
+            <summary>
+            暂停连接状态
+            </summary>
+        </member>
+        <member name="P:NetworkCommonTools.LiteNetLibEngine.NetSession.IsRunning">
+            <summary>
+            网络连接是否开启
+            </summary>
+        </member>
+        <member name="P:NetworkCommonTools.LiteNetLibEngine.NetSession.ConnectState">
+            <summary>
+            表示本地的连接状态
+            </summary>
+        </member>
+        <member name="P:NetworkCommonTools.LiteNetLibEngine.NetSession.Port">
+            <summary>
+            服务器端口
+            </summary>
+        </member>
+        <member name="P:NetworkCommonTools.LiteNetLibEngine.NetSession.ConnectionKey">
+            <summary>
+            连接的关键字
+            </summary>
+        </member>
+        <member name="P:NetworkCommonTools.LiteNetLibEngine.NetSession.NetManager">
+            <summary>
+            网络管理器
+            </summary>
+        </member>
+        <member name="P:NetworkCommonTools.LiteNetLibEngine.NetSession.ConnectPeer">
+            <summary>
+            连接的服务端
+            </summary>
+        </member>
+        <member name="E:NetworkCommonTools.LiteNetLibEngine.NetSession.OnNetworkErrors">
+            <summary>
+            网络出错时的错误事件
+            </summary>
+        </member>
+        <member name="E:NetworkCommonTools.LiteNetLibEngine.NetSession.OnPeerLatencyUpdate">
+            <summary>
+            检测连接的客户端是否正在连接
+            </summary>
+        </member>
+        <member name="E:NetworkCommonTools.LiteNetLibEngine.NetSession.OnReceiveEventEvent">
+            <summary>
+            用于监听处理类处理信息后的事件回调
+            </summary>
+        </member>
+        <member name="E:NetworkCommonTools.LiteNetLibEngine.NetSession.OnReceiveDataEvent">
+            <summary>
+            普通信息的接收（需要连接）
+            </summary>
+        </member>
+        <member name="E:NetworkCommonTools.LiteNetLibEngine.NetSession.OnUnconnectedRequestReceiveEvent">
+            <summary>
+            请求信息的接收（广播方式，不需要连接）
+            </summary>
+        </member>
+        <member name="E:NetworkCommonTools.LiteNetLibEngine.NetSession.OnUnconnectedResponseReceiveEvent">
+            <summary>
+            回复信息的接收（广播方式，不需要连接）
+            </summary>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.NetSession.Run">
+            <summary>
+            开启网络连接（随机端口）
+            </summary>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.NetSession.Run(System.Int32)">
+            <summary>
+            开启网络连接（指定端口）
+            </summary>
+            <param name="port"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.NetSession.ConnectToServer(System.String)">
+            <summary>
+            连接到指定IP
+            </summary>
+            <param name="ip"></param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.NetSession.Update">
+            <summary>
+            信息更新
+            </summary>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.NetSession.PauseConnected">
+            <summary>
+            暂时关闭与服务器的连接
+            </summary>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.NetSession.ShutDown">
+            <summary>
+            关闭网络连接
+            </summary>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.NetSession.FindPeer(System.Net.IPEndPoint)">
+            <summary>
+            按照指定的IP查找连接中的Peer
+            </summary>
+            <param name="endPoint"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.NetSession.CheckLoginKey(System.String)">
+            <summary>
+            检测key是否与本地相一致
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.NetSession.NetSession_ConnectionRequestEvent(LiteNetLib.ConnectionRequest)">
+            <summary>
+            获取连接到本地的机器并检测key是否正确
+            </summary>
+            <param name="request"></param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.NetSession.NetSession_NetworkReceiveUnconnectedEvent(System.Net.IPEndPoint,LiteNetLib.NetPacketReader,LiteNetLib.UnconnectedMessageType)">
+            <summary>
+            接收广播消息
+            </summary>
+            <param name="remoteEndPoint"></param>
+            <param name="reader"></param>
+            <param name="messageType"></param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.NetSession.NetSession_NetworkReceiveEvent(LiteNetLib.NetPeer,LiteNetLib.NetPacketReader,LiteNetLib.DeliveryMethod)">
+            <summary>
+            接收连接状态下的消息
+            </summary>
+            <param name="peer"></param>
+            <param name="reader"></param>
+            <param name="deliveryMethod"></param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.NetSession.NetSession_NetworkErrorEvent(System.Net.IPEndPoint,System.Net.Sockets.SocketError)">
+            <summary>
+            接收错误事件
+            </summary>
+            <param name="endPoint"></param>
+            <param name="socketError"></param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.NetSession.NetSession_NetworkLatencyUpdateEvent(LiteNetLib.NetPeer,System.Int32)">
+            <summary>
+            检测各个连接到本地的peer是否还在连接
+            </summary>
+            <param name="netPeer"></param>
+            <param name="latency"></param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.NetSession.ReceiveEvent(System.String,NetworkCommonTools.LiteNetLibEngine.EventType,System.Net.IPEndPoint,System.Object[])">
+            <summary>
+            接收处理类的回调事件信息
+            </summary>
+            <param name="controlCode">处理类的操作类型</param>
+            <param name="eventType">回调事件的类型</param>
+            <param name="endPoint">发送者的IP</param>
+            <param name="values">接收的数据</param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.NetSession.Send(Proto.OperationResponse,LiteNetLib.NetPeer,LiteNetLib.DeliveryMethod)">
+            <summary>
+            给本地连接并且指定的用户发送消息
+            </summary>
+            <param name="peer">发送的消息</param>
+            <param name="operationResponse">指定的用户</param>
+            <param name="deliveryMethod">发送的方式</param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.NetSession.Send(Proto.OperationResponse,System.Net.IPEndPoint,LiteNetLib.DeliveryMethod)">
+            <summary>
+            给本地连接并且指定IP的用户发送消息
+            </summary>
+            <param name="operationResponse"></param>
+            <param name="remoteEndPoint"></param>
+            <param name="deliveryMethod"></param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.NetSession.SendToSystem(Proto.OperationResponse,LiteNetLib.NetPeer,LiteNetLib.DeliveryMethod)">
+            <summary>
+            给本地连接并且指定的用户发送消息（系统端） 
+            </summary>
+            <param name="operationResponse">发送的消息</param>
+            <param name="peer">指定的用户</param>
+            <param name="deliveryMethod">发送的方式</param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.NetSession.SendToSystem(Proto.OperationResponse,System.Net.IPEndPoint,LiteNetLib.DeliveryMethod)">
+            <summary>
+            给本地连接并且指定IP的用户发送消息（系统端）
+            </summary>
+            <param name="operationResponse"></param>
+            <param name="remoteEndPoint"></param>
+            <param name="deliveryMethod"></param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.NetSession.SendToAll(Proto.OperationResponse,LiteNetLib.NetPeer,LiteNetLib.DeliveryMethod)">
+            <summary>
+            发送消息到本地连接的所有用户
+            </summary>
+            <param name="operationResponse">发送的消息</param>
+            <param name="excludePeer">不向这个玩家发送消息</param>
+            <param name="deliveryMethod">发送的方式</param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.NetSession.SendToAllSystem(Proto.OperationResponse,LiteNetLib.NetPeer,LiteNetLib.DeliveryMethod)">
+            <summary>
+            发送消息到本地连接的所有用户（系统端）
+            </summary>
+            <param name="operationResponse">发送的消息</param>
+            <param name="excludePeer">不向这个玩家发送消息</param>
+            <param name="deliveryMethod">发送的方式</param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.NetSession.SendDiscoveryRequest(Proto.OperationResponse,System.Int32)">
+            <summary>
+            发送请求信息（广播方式）
+            </summary>
+            <param name="operationResponse">发送的消息</param>
+            <param name="port">可指定的端口(-1默认是向服务器端口发送）</param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.NetSession.SendDiscoveryRequestToSystem(Proto.OperationResponse,System.Int32)">
+            <summary>
+            发送请求信息（广播方式,系统端）
+            </summary>
+            <param name="operationResponse">发送的消息</param>
+            <param name="port">可指定的端口(-1默认是向服务器端口发送）</param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.NetSession.SendDiscoveryResponse(Proto.OperationResponse,System.Net.IPEndPoint)">
+            <summary>
+            发送回复信息（广播方式）
+            </summary>
+            <param name="operationResponse">发送的消息</param>
+            <param name="remoteEndPoint">可指定的IP</param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.NetSession.SendDiscoveryResponseToSystem(Proto.OperationResponse,System.Net.IPEndPoint)">
+            <summary>
+            发送回复信息（广播方式,系统端）
+            </summary>
+            <param name="operationResponse">发送的消息</param>
+            <param name="remoteEndPoint">可指定的IP</param>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.PacketExtend.UnPacketData(NetworkCommonTools.LiteNetLibEngine.NetSession,LiteNetLib.NetPacketReader,NetworkCommonTools.LiteNetLibEngine.PacketType@)">
+            <summary>
+            获取该消息的类型
+            </summary>
+            <param name="engine"></param>
+            <param name="reader"></param>
+            <param name="dataType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetworkCommonTools.LiteNetLibEngine.PacketExtend.EnPacketData(NetworkCommonTools.LiteNetLibEngine.NetSession,Proto.OperationResponse,NetworkCommonTools.LiteNetLibEngine.PacketType)">
+            <summary>
+            添加该消息的类型
+            </summary>
+            <param name="engine"></param>
+            <param name="response"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="P:NetworkCommonTools.Message.IReceiveMsg.ProcessMessageIDs">
+            <summary>
+            需要监听的事件ID
+            </summary>
+        </member>
+        <member name="M:NetworkCommonTools.Message.IReceiveMsg.ProcessMessage(System.String,NetworkCommonTools.LiteNetLibEngine.EventType,System.Net.IPEndPoint,System.Object[])">
+            <summary>
+            接收事件并处理
+            </summary>
+            <param name="controlCode"></param>
+            <param name="eventType"></param>
+            <param name="sender"></param>
+            <param name="values"></param>
+        </member>
+        <member name="F:NetworkCommonTools.Message.MessageCenter.listeners">
+            <summary>
+            保存监听事件的列表
+            </summary>
+        </member>
+        <member name="M:NetworkCommonTools.Message.MessageCenter.ProcessMessage(System.String,NetworkCommonTools.LiteNetLibEngine.EventType,System.Net.IPEndPoint,System.Object[])">
+            <summary>
+            分发并处理消息
+            </summary>
+            <param name="controlCode"></param>
+            <param name="eventType"></param>
+            <param name="ipEndPoint"></param>
+            <param name="values"></param>
+        </member>
+        <member name="M:NetworkCommonTools.Message.MessageCenter.AddListener(NetworkCommonTools.Message.IReceiveMsg)">
+            <summary>
+            添加监听
+            </summary>
+            <param name="receiveMsg"></param>
+        </member>
+        <member name="M:NetworkCommonTools.Message.MessageCenter.RemoveListener(NetworkCommonTools.Message.IReceiveMsg)">
+            <summary>
+            移除监听
+            </summary>
+            <param name="receiveMsg"></param>
+        </member>
+        <member name="M:NetworkCommonTools.Message.NodeList`2.AddNode(`0[],`1)">
+            <summary>
+            添加消息监听
+            </summary>
+            <param name="messageBase"></param>
+            <param name="id"></param>
+        </member>
+        <member name="M:NetworkCommonTools.Message.NodeList`2.AddNode(`0,`1)">
+            <summary>
+            添加消息监听
+            </summary>
+            <param name="messageBase"></param>
+            <param name="id"></param>
+        </member>
+        <member name="M:NetworkCommonTools.Message.NodeList`2.RemoveNode(`0[],`1)">
+            <summary>
+             移除消息监听
+            </summary>
+            <param name="messageBase"></param>
+            <param name="id"></param>
+        </member>
+        <member name="M:NetworkCommonTools.Message.NodeList`2.RemoveNode(`0,`1)">
+            <summary>
+            移除消息监听
+            </summary>
+            <param name="messageBase"></param>
+            <param name="id"></param>
+        </member>
+        <member name="T:NetworkCommonTools.Room">
+            <summary>
+            房间操作类
+            </summary>
+        </member>
+        <member name="P:NetworkCommonTools.Room.Item(System.String)">
+            <summary>
+            获取该uid在房间内的序号
+            </summary>
+            <param name="uid"></param>
+            <returns></returns>
+        </member>
+        <member name="P:NetworkCommonTools.Room.Item(System.Int32)">
+            <summary>
+            获取该序号的用户ID
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="P:NetworkCommonTools.Room.RoomInfo">
+            <summary>
+            房间信息
+            </summary>
+        </member>
+        <member name="P:NetworkCommonTools.Room.UserCount">
+            <summary>
+            玩家数量
+            </summary>
+        </member>
+        <member name="P:NetworkCommonTools.Room.MaxUserCount">
+            <summary>
+            最大玩家数量
+            </summary>
+        </member>
+        <member name="P:NetworkCommonTools.Room.IsFull">
+            <summary>
+            该房间是否已经满人
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.Room.roomInfo">
+            <summary>
+             房间信息
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.Room.UsersList">
+            <summary>
+            玩家与序号的关系列表
+            </summary>
+        </member>
+        <member name="M:NetworkCommonTools.Room.#ctor(System.Int32,System.String)">
+            <summary>
+             指定房间的最大人数，发起者默认是UserManager中的LocalUser
+            </summary>
+            <param name="userCount"></param>
+            <param name="roomName"></param>
+        </member>
+        <member name="M:NetworkCommonTools.Room.#ctor(NetworkCommonTools.User,System.Int32,System.String)">
+            <summary>
+            指定房间的最大人数并指定发起者
+            </summary>
+            <param name="initiator"></param>
+            <param name="userCount"></param>
+            <param name="roomName"></param>
+        </member>
+        <member name="M:NetworkCommonTools.Room.Add(System.String,NetworkCommonTools.User)">
+            <summary>
+            添加玩家到房间内
+            </summary>
+            <param name="uid"></param>
+            <param name="user"></param>
+        </member>
+        <member name="M:NetworkCommonTools.Room.Remove(System.String)">
+            <summary>
+            从房间内移除玩家
+            </summary>
+            <param name="uid"></param>
+        </member>
+        <member name="M:NetworkCommonTools.Room.Clear">
+            <summary>
+            清空房间
+            </summary>
+        </member>
+        <member name="T:NetworkCommonTools.RoomInfo">
+            <summary>
+            房间信息
+            </summary>
+        </member>
+        <member name="P:NetworkCommonTools.RoomInfo.ID">
+            <summary>
+            房间ID
+            </summary>
+        </member>
+        <member name="P:NetworkCommonTools.RoomInfo.RoomName">
+            <summary>
+            房间名
+            </summary>
+        </member>
+        <member name="P:NetworkCommonTools.RoomInfo.Initiator_ID">
+            <summary>
+            房间发起人的ID
+            </summary>
+        </member>
+        <member name="P:NetworkCommonTools.RoomInfo.Users">
+            <summary>
+            房间里的玩家信息
+            </summary>
+        </member>
+        <member name="P:NetworkCommonTools.RoomInfo.Item(System.String)">
+            <summary>
+            根据用户ID获取房间内的用户信息
+            </summary>
+        </member>
+        <member name="M:NetworkCommonTools.RoomInfo.ToString">
+            <summary>
+            显示房间信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:NetworkCommonTools.RoomManager">
+            <summary>
+            房间管理器
+            </summary>
+        </member>
+        <member name="P:NetworkCommonTools.RoomManager.LocalRoom">
+            <summary>
+            本地房间
+            </summary>
+        </member>
+        <member name="M:NetworkCommonTools.RoomManager.Add(NetworkCommonTools.User)">
+            <summary>
+            将玩家添加进房间里
+            </summary>
+            <param name="user"></param>
+        </member>
+        <member name="M:NetworkCommonTools.RoomManager.Remove(System.String)">
+            <summary>
+            将玩家从房间里移除
+            </summary>
+            <param name="uid"></param>
+        </member>
+        <member name="M:NetworkCommonTools.RoomManager.Clear">
+            <summary>
+            清空房间列表
+            </summary>
+        </member>
+        <member name="T:NetworkCommonTools.Singleton`1">
+            <summary>
+            设置单例
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:NetworkCommonTools.User">
+            <summary>
+            用户信息
+            </summary>
+        </member>
+        <member name="P:NetworkCommonTools.User.ID">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:NetworkCommonTools.User.nickname">
+            <summary>
+            用户名称
+            </summary>
+        </member>
+        <member name="P:NetworkCommonTools.User.sex">
+            <summary>
+            用户性别
+            </summary>
+        </member>
+        <member name="P:NetworkCommonTools.User.HeadImage">
+            <summary>
+            用户头像
+            </summary>
+        </member>
+        <member name="P:NetworkCommonTools.User.Address">
+            <summary>
+            用户IP地址
+            </summary>
+        </member>
+        <member name="T:NetworkCommonTools.UserManager">
+            <summary>
+            用户管理
+            </summary>
+        </member>
+        <member name="P:NetworkCommonTools.UserManager.Item(System.String)">
+            <summary>
+            根据uid查找User
+            </summary>
+            <param name="uid"></param>
+            <returns></returns>
+        </member>
+        <member name="P:NetworkCommonTools.UserManager.Item(System.Net.IPEndPoint)">
+            <summary>
+            根据IP查找User
+            </summary>
+            <param name="iPEndPoint"></param>
+            <returns></returns>
+        </member>
+        <member name="P:NetworkCommonTools.UserManager.LocalUser">
+            <summary>
+            本地用户
+            </summary>
+        </member>
+        <member name="P:NetworkCommonTools.UserManager.UserCount">
+            <summary>
+            玩家数量
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.UserManager.UserAddressDic">
+            <summary>
+            用户ID与iP地址的列表
+            </summary>
+        </member>
+        <member name="F:NetworkCommonTools.UserManager.UserDic">
+            <summary>
+            用户ID与用户数据的列表
+            </summary>
+        </member>
+        <member name="M:NetworkCommonTools.UserManager.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:NetworkCommonTools.UserManager.Add(NetworkCommonTools.User,System.Net.IPEndPoint)">
+            <summary>
+             添加玩家
+            </summary>
+            <param name="user"></param>
+            <param name="iPEndPoint"></param>
+        </member>
+        <member name="M:NetworkCommonTools.UserManager.Remove(System.String)">
+            <summary>
+            移除玩家
+            </summary>
+            <param name="uid"></param>
+        </member>
+        <member name="M:NetworkCommonTools.UserManager.Clear">
+            <summary>
+            清空连接用户列表
+            </summary>
+        </member>
+        <member name="M:NetworkCommonTools.UserManager.GetIPAddress(System.String)">
+            <summary>
+            获取用户的地址
+            </summary>
+            <param name="uid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DumpController.Init">
+            <summary>
+            开始检测未捕获的异常，并生成dmp文件（Unity中无效）
+            </summary>
+        </member>
+        <member name="M:DumpController.Dispose">
+            <summary>
+            取消检测未捕获的异常
+            </summary>
+        </member>
+        <member name="M:DumpController.UnhandledExceptionEventHandler(System.Object,System.UnhandledExceptionEventArgs)">
+            <summary>
+            用于捕获应用程序域(非UI线程)中未捕获的异常
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:MiniDump">
+            <summary>
+            DMP文件生成
+            </summary>
+        </member>
+        <member name="M:MiniDump.Write">
+            <summary>
+            默认路径生成dmp文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MiniDump.Write(System.String)">
+            <summary>
+            指定路径生成dmp文件
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MiniDump.Write(System.String,MiniDump.DumpType)">
+            <summary>
+            指定路径和类型生成dmp文件
+            </summary>
+            <param name="fileName"></param>
+            <param name="dumpType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Log.LogType">
+            <summary>
+            输出日志类型
+            </summary>
+        </member>
+        <member name="F:Log.LogType.Normal">
+            <summary>
+            普通输出
+            </summary>
+        </member>
+        <member name="F:Log.LogType.Warnning">
+            <summary>
+            警告输出
+            </summary>
+        </member>
+        <member name="F:Log.LogType.Error">
+            <summary>
+            错误输出
+            </summary>
+        </member>
+        <member name="F:Log.LogType.TestDebug">
+            <summary>
+            测试用的输出
+            </summary>
+        </member>
+        <member name="P:Log.LogIsDebug">
+            <summary>
+             判断该类型是否需要输出
+            </summary>
+        </member>
+        <member name="F:Log.DebugPath">
+            <summary>
+            输出路径
+            </summary>
+        </member>
+        <member name="F:Log.isWriteFile">
+            <summary>
+            是否输出Debug文件
+            </summary>
+        </member>
+        <member name="F:Log.fileIndex">
+            <summary>
+            日志序号
+            </summary>
+        </member>
+        <member name="F:Log.fileStream">
+            <summary>
+            输出日志文件的文件流
+            </summary>
+        </member>
+        <member name="F:Log.debugMsgControl">
+            <summary>
+            根据不同平台使用不同的输出形式
+            </summary>
+        </member>
+        <member name="M:Log.WriteLine(System.Object)">
+            <summary>
+             普通日志输出
+            </summary>
+            <param name="v1"></param>
+        </member>
+        <member name="M:Log.WriteLine(System.String,System.Object[])">
+            <summary>
+            普通日志输出
+            </summary>
+            <param name="v1"></param>
+            <param name="v2"></param>
+        </member>
+        <member name="M:Log.WriteLineTest(System.Object)">
+            <summary>
+            测试日志输出
+            </summary>
+            <param name="v1"></param>
+        </member>
+        <member name="M:Log.WriteLineTest(System.String,System.Object[])">
+            <summary>
+            测试日志输出
+            </summary>
+            <param name="v1"></param>
+            <param name="v2"></param>
+        </member>
+        <!-- 对于成员“M:Log.WriteLineWarnning(System.String,System.Object[])”忽略有格式错误的 XML 注释 -->
+        <member name="M:Log.WriteLineError(System.String,System.Object[])">
+            <summary>
+            错误日志输出
+            </summary>
+            <param name="v1"></param>
+            <param name="v2"></param>
+        </member>
+        <member name="M:Log.Init(NetworkCommonTools.DebugControl,System.Boolean)">
+            <summary>
+            初始化
+            </summary>
+            <param name="debug"></param>
+            <param name="isWrite"></param>
+        </member>
+        <member name="M:Log.Write(System.Object,Log.LogType)">
+            <summary>
+            写进文件
+            </summary>
+            <param name="obj"></param>
+            <param name="logType"></param>
+        </member>
+        <member name="M:Log.Debug(System.String,Log.LogType)">
+            <summary>
+            根据Log类型进行输出
+            </summary>
+            <param name="msg"></param>
+            <param name="logType"></param>
+        </member>
+        <member name="M:Log.WriteToFile(System.String)">
+            <summary>
+            将信息写到文本中
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Log.UnhandledExceptionEventHandler(System.Object,System.UnhandledExceptionEventArgs)">
+            <summary>
+            用于捕获应用程序域(非UI线程)中未捕获的异常
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+    </members>
+</doc>

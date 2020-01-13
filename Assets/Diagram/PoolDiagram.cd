@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PoolManager">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAQIAAAAAAAAAAAAAAAAAAAAAAAAAgACAABCAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Manager\PoolManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTFrame.MTPool.PoolOnject">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Manager\Pool\Datas\PoolOnject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTFrame.MTPool.BasePool">
+    <Position X="4.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAARAAAAAAAAAAEAAAAAAAAAAAAAAAAACAABCAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Manager\Pool\Pools\Base\BasePool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTFrame.MTPool.EnemyPool" Collapsed="true">
+    <Position X="2.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Manager\Pool\Pools\EnemyPool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTFrame.MTPool.GenericPropPool" Collapsed="true">
+    <Position X="6.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Manager\Pool\Pools\GenericPropPool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTFrame.MTPool.PlayerPool" Collapsed="true">
+    <Position X="4.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Manager\Pool\Pools\PlayerPool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="MTFrame.MTPool.PoolObjectStateType">
+    <Position X="8" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Manager\Pool\Enum\PoolObjectStateType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MTFrame.MTPool.PoolType" Collapsed="true">
+    <Position X="5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Manager\Pool\Enum\PoolType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

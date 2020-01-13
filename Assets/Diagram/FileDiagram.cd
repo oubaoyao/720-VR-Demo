@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MTFrame.MTFile.ByteEncryptBase">
+    <Position X="2.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACABAMAAABAQAAAAgAAAAAAAAgIBAAIAAAAEBAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Manager\File\ByteEncrypt\Base\BaseByteEncrypt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTFrame.MTFile.EXRFileSave">
+    <Position X="4.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAAAAAAAAAAAAAAAAAAAAAAABAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Manager\File\ByteEncrypt\EXRFileSave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTFrame.MTFile.JPGFileSave">
+    <Position X="8.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAAAAAAAAAAAAAAAAAAAAAAABAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Manager\File\ByteEncrypt\JPGFileSave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTFrame.MTFile.JsonFileSave">
+    <Position X="13.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAAAAAAAAAAAAAAAAAAAAAAABAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Manager\File\ByteEncrypt\JsonFileSave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTFrame.MTFile.PNGFileSave">
+    <Position X="2" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAAAAAAAAAAAAAAAAAAAAAAABAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Manager\File\ByteEncrypt\PNGFileSave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTFrame.MTFile.TXTFileSave">
+    <Position X="6.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAAAAAAAAAAAAAAAAAAAAAAABAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Manager\File\ByteEncrypt\TXTFileSave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTFrame.MTFile.XMLFileSave">
+    <Position X="11" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAAAAAAAAAAAAAAAAAAAAAAABAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Manager\File\ByteEncrypt\XMLFileSave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileManager">
+    <Position X="4.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAACBAIBAAAAAAAAAAAAAIgAAAAIBAAAACAAEEAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Manager\FileManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="MTFrame.MTFile.FileObject">
+    <Position X="6.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Manager\File\Datas\FileObject.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="MTFrame.MTFile.EncryptModeType">
+    <Position X="9" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAQAAAAEAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Manager\File\Enum\EncryptModeType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MTFrame.MTFile.FileFormatType">
+    <Position X="9" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAQAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAACAQAAAgA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Manager\File\Enum\FileFormatType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

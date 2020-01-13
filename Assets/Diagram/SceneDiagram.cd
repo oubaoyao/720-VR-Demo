@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MTFrame.MTScene.UnityLocal_SceneLoading">
+    <Position X="3" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAQAAAEAAAAEAACAAAAAAEAAEAAoABAAAQAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Manager\Scene\UnityLocal_SceneLoading.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneManager">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAQAAAAAAAAAAACAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Manager\SceneManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="ScenePath">
+    <Position X="0.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAIAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Manager\Scene\Path\ScenePath.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="MTFrame.MTScene.LoadingModeType">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Manager\Scene\Enum\LoadingModeType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MTFrame.MTScene.LoadingType">
+    <Position X="6.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Manager\Scene\Enum\LoadingType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

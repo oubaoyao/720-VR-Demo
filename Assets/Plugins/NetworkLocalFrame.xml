@@ -1,0 +1,432 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NetworkLocalFrame</name>
+    </assembly>
+    <members>
+        <member name="T:NetworkLocalFrame.Engine.LocalOperateCode">
+            <summary>
+            操作类的类型
+            </summary>
+        </member>
+        <member name="F:NetworkLocalFrame.Engine.LocalOperateCode.RoomSearchControl">
+            <summary>
+            房间搜索操作
+            </summary>
+        </member>
+        <member name="F:NetworkLocalFrame.Engine.LocalOperateCode.RoomUserControl">
+            <summary>
+            房间里用户的操作
+            </summary>
+        </member>
+        <member name="T:NetworkLocalFrame.Engine.LocalParmaterCode">
+            <summary>
+            数据包内参数的类型
+            </summary>
+        </member>
+        <member name="F:NetworkLocalFrame.Engine.LocalParmaterCode.RoomControlCode">
+            <summary>
+            房间操作的处理类的操作类型
+            </summary>
+        </member>
+        <member name="T:NetworkLocalFrame.Engine.RoomControlCode">
+            <summary>
+            房间操作处理类中要处理的操作类型
+            </summary>
+        </member>
+        <member name="F:NetworkLocalFrame.Engine.RoomControlCode.Search">
+            <summary>
+            搜索房间操作
+            </summary>
+        </member>
+        <member name="F:NetworkLocalFrame.Engine.RoomControlCode.Join">
+            <summary>
+            加入房间操作
+            </summary>
+        </member>
+        <member name="F:NetworkLocalFrame.Engine.RoomControlCode.Leave">
+            <summary>
+            离开房间操作
+            </summary>
+        </member>
+        <member name="T:NetworkLocalFrame.Engine.RoomSearchControlHandle">
+            <summary>
+            房间搜索处理
+            </summary>
+        </member>
+        <member name="P:NetworkLocalFrame.Engine.RoomSearchControlHandle.OperateHandleCode">
+            <summary>
+            处理类的类型
+            </summary>
+        </member>
+        <member name="M:NetworkLocalFrame.Engine.RoomSearchControlHandle.SearchRequest(NetworkCommonTools.LiteNetLibEngine.INetEngine,System.Net.IPEndPoint,Proto.OperationResponse)">
+            <summary>
+            接收搜索房间请求
+            </summary>
+            <param name="netEngine"></param>
+            <param name="endPoint"></param>
+            <param name="operation"></param>
+        </member>
+        <member name="M:NetworkLocalFrame.Engine.RoomSearchControlHandle.SearchResponse(NetworkCommonTools.LiteNetLibEngine.INetEngine,System.Net.IPEndPoint,Proto.OperationResponse)">
+            <summary>
+            接收搜索房间的回复信息
+            </summary>
+            <param name="netEngine"></param>
+            <param name="endPoint"></param>
+            <param name="operation"></param>
+        </member>
+        <member name="T:NetworkLocalFrame.Engine.RoomUserControlHandle">
+            <summary>
+            房间用户操作处理
+            </summary>
+        </member>
+        <member name="P:NetworkLocalFrame.Engine.RoomUserControlHandle.OperateHandleCode">
+            <summary>
+            处理类的类型
+            </summary>
+        </member>
+        <member name="M:NetworkLocalFrame.Engine.RoomUserControlHandle.Join(NetworkCommonTools.LiteNetLibEngine.INetEngine,LiteNetLib.NetPeer,Proto.OperationResponse)">
+            <summary>
+            接收加入房间的消息
+            </summary>
+            <param name="netEngine"></param>
+            <param name="netPeer"></param>
+            <param name="operation"></param>
+        </member>
+        <member name="M:NetworkLocalFrame.Engine.RoomUserControlHandle.JoinResponse(NetworkCommonTools.LiteNetLibEngine.INetEngine,System.Net.IPEndPoint,Proto.OperationResponse)">
+            <summary>
+            接收加入房间的回复
+            </summary>
+            <param name="netEngine"></param>
+            <param name="endPoint"></param>
+            <param name="operation"></param>
+        </member>
+        <member name="M:NetworkLocalFrame.Engine.RoomUserControlHandle.Leave(NetworkCommonTools.LiteNetLibEngine.INetEngine,LiteNetLib.NetPeer,Proto.OperationResponse)">
+            <summary>
+            客户端离开房间
+            </summary>
+            <param name="netEngine"></param>
+            <param name="netPeer"></param>
+            <param name="operation"></param>
+        </member>
+        <member name="M:NetworkLocalFrame.GameLocalEngine.OnFinishSearchListener(NetworkCommonTools.RoomInfo[])">
+            <summary>
+            搜索完成后接收搜索到的房间信息
+            </summary>
+            <param name="roomInfos">搜索到的房间</param>
+        </member>
+        <member name="M:NetworkLocalFrame.GameLocalEngine.OnRoomConnectedSuccessListener(LiteNetLib.NetPeer,NetworkLocalFrame.LiteLocal,NetworkCommonTools.RoomInfo)">
+            <summary>
+            进入房间成功
+            </summary>
+            <param name="netPeer">连接的房主的Peer</param>
+            <param name="liteLocal"></param>
+            <param name="roomInfo">该房间的信息</param>
+        </member>
+        <member name="M:NetworkLocalFrame.GameLocalEngine.OnRoomConnectedFailureListener(LiteNetLib.NetPeer,NetworkLocalFrame.LiteLocal)">
+            <summary>
+            进入房间失败
+            </summary>
+            <param name="netPeer">连接的房主的Peer</param>
+            <param name="liteLocal"></param>
+        </member>
+        <member name="M:NetworkLocalFrame.GameLocalEngine.OnRoomDisconnectedListener(LiteNetLib.NetPeer,NetworkLocalFrame.LiteLocal,NetworkCommonTools.LiteNetLibEngine.DisconnectedType)">
+            <summary>
+            退出房间（断开连接）
+            </summary>
+            <param name="netPeer">连接的房主的Peer</param>
+            <param name="liteLocal"></param>
+        </member>
+        <member name="M:NetworkLocalFrame.GameLocalEngine.OnReconnectedListener(LiteNetLib.NetPeer,NetworkLocalFrame.LiteLocal,System.Int32)">
+            <summary>
+            检测开始重连
+            </summary>
+            <param name="netPeer">连接的房主的Peer</param>
+            <param name="liteLocal"></param>
+            <param name="reconnectedCount">已重连次数</param>
+        </member>
+        <member name="M:NetworkLocalFrame.GameLocalEngine.OnPlayerConnectedListener(NetworkCommonTools.User,System.Net.IPEndPoint,NetworkLocalFrame.LiteLocal)">
+            <summary>
+            检测玩家进入房间
+            </summary>
+            <param name="user">进入的玩家</param>
+            <param name="iPEndPoint">进入玩家的IP地址</param>
+            <param name="liteLocal"></param>
+        </member>
+        <member name="M:NetworkLocalFrame.GameLocalEngine.OnPlayerDisconnectedListener(NetworkCommonTools.User,System.Net.IPEndPoint,NetworkLocalFrame.LiteLocal)">
+            <summary>
+            检测玩家退出房间
+            </summary>
+            <param name="user">退出的玩家</param>
+            <param name="iPEndPoint">退出玩家的IP地址</param>
+            <param name="liteLocal"></param>
+        </member>
+        <member name="M:NetworkLocalFrame.GameLocalEngine.OnNetworkErrorListener(System.Net.Sockets.SocketError)">
+            <summary>
+             网络连接错误的回调
+            </summary>
+            <param name="socketError"></param>
+        </member>
+        <member name="M:NetworkLocalFrame.GameLocalEngine.OnPeerLatencyUpdateListener(LiteNetLib.NetPeer,System.Int32)">
+            <summary>
+            检测各个连接的Peer是否正常连接
+            </summary>
+            <param name="netPeer"></param>
+            <param name="latency"></param>
+        </member>
+        <member name="T:NetworkLocalFrame.LocalState">
+            <summary>
+            连接的状态
+            </summary>
+        </member>
+        <member name="F:NetworkLocalFrame.LocalState.Disconnected">
+            <summary>
+            断开状态
+            </summary>
+        </member>
+        <member name="F:NetworkLocalFrame.LocalState.Searching">
+            <summary>
+            搜索状态
+            </summary>
+        </member>
+        <member name="F:NetworkLocalFrame.LocalState.ServerOpened">
+            <summary>
+            服务器状态
+            </summary>
+        </member>
+        <member name="F:NetworkLocalFrame.LocalState.ClientOpened">
+            <summary>
+            客户端状态
+            </summary>
+        </member>
+        <member name="F:NetworkLocalFrame.LiteLocal.OnFinishSearch">
+            <summary>
+            房间搜索完成后的回调
+            </summary>
+        </member>
+        <member name="F:NetworkLocalFrame.LiteLocal.OnRoomConnectedSuccess">
+            <summary>
+            进入房间成功后的回调
+            </summary>
+        </member>
+        <member name="F:NetworkLocalFrame.LiteLocal.OnRoomConnectedFailure">
+            <summary>
+            进入房间失败后的回调
+            </summary>
+        </member>
+        <member name="F:NetworkLocalFrame.LiteLocal.OnRoomDisconnected">
+            <summary>
+            退出房间时的回调
+            </summary>
+        </member>
+        <member name="F:NetworkLocalFrame.LiteLocal.OnReconnected">
+            <summary>
+            开始重连时的回调
+            </summary>
+        </member>
+        <member name="F:NetworkLocalFrame.LiteLocal.OnPlayerConnected">
+            <summary>
+            有其他玩家进入房间时的回调
+            </summary>
+        </member>
+        <member name="F:NetworkLocalFrame.LiteLocal.OnPlayerDisconnected">
+            <summary>
+            有其他玩家离开房间时的回调
+            </summary>
+        </member>
+        <member name="P:NetworkLocalFrame.LiteLocal.LocalState">
+            <summary>
+            本地状态
+            </summary>
+        </member>
+        <member name="P:NetworkLocalFrame.LiteLocal.MaxSearchTime">
+            <summary>
+            最大搜索时间
+            </summary>
+        </member>
+        <member name="F:NetworkLocalFrame.LiteLocal.localPeer">
+            <summary>
+            当前的连接方式
+            </summary>
+        </member>
+        <member name="M:NetworkLocalFrame.LiteLocal.Search">
+            <summary>
+            搜索房间
+            </summary>
+        </member>
+        <member name="M:NetworkLocalFrame.LiteLocal.Creat">
+            <summary>
+            自动搜索IP创建服务器
+            </summary>
+        </member>
+        <member name="M:NetworkLocalFrame.LiteLocal.Connect(System.String,System.Boolean,System.Int32)">
+            <summary>
+             连接到指定IP
+            </summary>
+            <param name="ip">IP地址</param>
+            <param name="autoReconect">是否重连</param>
+            <param name="reconnectedTime">重连的等待时间,0为一直等待重连</param>
+        </member>
+        <member name="M:NetworkLocalFrame.LiteLocal.ShutDown">
+            <summary>
+            退出连接（房间）
+            </summary>
+        </member>
+        <member name="T:NetworkLocalFrame.LocalClient">
+            <summary>
+            客户端逻辑
+            </summary>
+        </member>
+        <member name="P:NetworkLocalFrame.LocalClient.MaxReconnectCount">
+            <summary>
+            最大重连次数（-1就一直重连）
+            </summary>
+        </member>
+        <member name="P:NetworkLocalFrame.LocalClient.AutoReconect">
+            <summary>
+            与服务器断开后是否自动连接
+            </summary>
+        </member>
+        <member name="F:NetworkLocalFrame.LocalClient.ReconnectCount">
+            <summary>
+            尝试重连的次数
+            </summary>
+        </member>
+        <member name="F:NetworkLocalFrame.LocalClient.ReconnectDeley">
+            <summary>
+            重连的时间间隔
+            </summary>
+        </member>
+        <member name="P:NetworkLocalFrame.LocalClient.IsConnected">
+            <summary>
+            是否已连接服务器
+            </summary>
+        </member>
+        <member name="P:NetworkLocalFrame.LocalClient.IsRecJoinResponse">
+            <summary>
+            是否接收到加入的回复
+            </summary>
+        </member>
+        <member name="F:NetworkLocalFrame.LocalClient.IP">
+            <summary>
+            服务器地址
+            </summary>
+        </member>
+        <member name="M:NetworkLocalFrame.LocalClient.Run">
+            <summary>
+            开启客户端连接
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NetworkLocalFrame.LocalClient.Exit">
+            <summary>
+            退出客户端
+            </summary>
+        </member>
+        <member name="M:NetworkLocalFrame.LocalClient.Connect">
+            <summary>
+            连接服务器
+            </summary>
+        </member>
+        <member name="M:NetworkLocalFrame.LocalClient.ReConnect">
+            <summary>
+            重新连接
+            </summary>
+        </member>
+        <member name="M:NetworkLocalFrame.LocalClient.SendJoinRequest">
+            <summary>
+            发送加入房间请求
+            </summary>
+        </member>
+        <member name="M:NetworkLocalFrame.LocalClient.OnPeerConnectedEvent(LiteNetLib.NetPeer)">
+            <summary>
+            接收连接成功
+            </summary>
+            <param name="peer"></param>
+        </member>
+        <member name="M:NetworkLocalFrame.LocalClient.OnPeerDisconnectedEvent(LiteNetLib.NetPeer,LiteNetLib.DisconnectInfo)">
+            <summary>
+            接收断线信息
+            </summary>
+            <param name="peer"></param>
+            <param name="disconnectInfo"></param>
+        </member>
+        <member name="M:NetworkLocalFrame.LocalClient.ProcessMessage(System.String,NetworkCommonTools.LiteNetLibEngine.EventType,System.Net.IPEndPoint,System.Object[])">
+            <summary>
+            处理接收事件
+            </summary>
+            <param name="controlCode"></param>
+            <param name="eventType"></param>
+            <param name="sender"></param>
+            <param name="values"></param>
+        </member>
+        <member name="T:NetworkLocalFrame.LocalSearch">
+            <summary>
+            搜索阶段逻辑
+            </summary>
+        </member>
+        <member name="P:NetworkLocalFrame.LocalSearch.RoomInfos">
+            <summary>
+            记录搜索到的房间信息
+            </summary>
+        </member>
+        <member name="M:NetworkLocalFrame.LocalSearch.Run">
+            <summary>
+            开始搜索
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NetworkLocalFrame.LocalSearch.Exit">
+            <summary>
+            关闭搜索
+            </summary>
+        </member>
+        <member name="M:NetworkLocalFrame.LocalSearch.ProcessMessage(System.String,NetworkCommonTools.LiteNetLibEngine.EventType,System.Net.IPEndPoint,System.Object[])">
+            <summary>
+            接收信息
+            </summary>
+            <param name="controlCode"></param>
+            <param name="eventType"></param>
+            <param name="sender"></param>
+            <param name="values"></param>
+        </member>
+        <member name="T:NetworkLocalFrame.LocalServer">
+            <summary>
+            主机逻辑（房主）
+            </summary>
+        </member>
+        <member name="M:NetworkLocalFrame.LocalServer.Run">
+            <summary>
+            开启服务器连接
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NetworkLocalFrame.LocalServer.Exit">
+            <summary>
+            退出服务器连接
+            </summary>
+        </member>
+        <member name="M:NetworkLocalFrame.LocalServer.OnPeerConnectedEvent(LiteNetLib.NetPeer)">
+            <summary>
+            客户端连接成功
+            </summary>
+            <param name="peer"></param>
+        </member>
+        <member name="M:NetworkLocalFrame.LocalServer.OnPeerDisconnectedEvent(LiteNetLib.NetPeer,LiteNetLib.DisconnectInfo)">
+            <summary>
+            客户端断开
+            </summary>
+            <param name="peer"></param>
+            <param name="disconnectInfo"></param>
+        </member>
+        <member name="M:NetworkLocalFrame.LocalServer.ProcessMessage(System.String,NetworkCommonTools.LiteNetLibEngine.EventType,System.Net.IPEndPoint,System.Object[])">
+            <summary>
+            接收信息
+            </summary>
+            <param name="controlCode"></param>
+            <param name="eventType"></param>
+            <param name="sender"></param>
+            <param name="values"></param>
+        </member>
+    </members>
+</doc>

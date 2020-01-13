@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NetworkClientFrame</name>
+    </assembly>
+    <members>
+        <member name="T:NetworkClientFrame.LiteClient">
+            <summary>
+            客户端
+            </summary>
+        </member>
+        <member name="F:NetworkClientFrame.LiteClient.OnConnected">
+            <summary>
+            连接成功
+            </summary>
+        </member>
+        <member name="F:NetworkClientFrame.LiteClient.OnDisconnected">
+            <summary>
+            断开连接
+            </summary>
+        </member>
+        <member name="F:NetworkClientFrame.LiteClient.OnReconnected">
+            <summary>
+            开始重连
+            </summary>
+        </member>
+        <member name="P:NetworkClientFrame.LiteClient.ServerIp">
+            <summary>
+            连接的服务器ip
+            </summary>
+        </member>
+        <member name="P:NetworkClientFrame.LiteClient.AutoReconect">
+            <summary>
+            是否断线重连
+            </summary>
+        </member>
+        <member name="P:NetworkClientFrame.LiteClient.MaxReconnectCount">
+            <summary>
+            最大重连次数（-1就一直重连）
+            </summary>
+        </member>
+        <member name="F:NetworkClientFrame.LiteClient.ReconnectCount">
+            <summary>
+            尝试重连的次数
+            </summary>
+        </member>
+        <member name="F:NetworkClientFrame.LiteClient.ReconnectDeley">
+            <summary>
+            重连的时间间隔
+            </summary>
+        </member>
+        <member name="M:NetworkClientFrame.LiteClient.Start">
+            <summary>
+            开始连接
+            </summary>
+        </member>
+        <member name="M:NetworkClientFrame.LiteClient.ShutDown">
+            <summary>
+            断开连接
+            </summary>
+        </member>
+        <member name="M:NetworkClientFrame.LiteClient.SendToServer(Proto.OperationResponse,LiteNetLib.DeliveryMethod)">
+            <summary>
+            发送消息到服务器
+            </summary>
+            <param name="operationResponse"></param>
+            <param name="deliveryMethod"></param>
+        </member>
+        <member name="M:NetworkClientFrame.LiteClient.Connect">
+            <summary>
+            连接服务器
+            </summary>
+        </member>
+        <member name="M:NetworkClientFrame.LiteClient.ReConnect">
+            <summary>
+            重新连接
+            </summary>
+        </member>
+        <member name="M:NetworkClientFrame.LiteClient.PeerConnectedEventListener(LiteNetLib.NetPeer)">
+            <summary>
+            接收连接成功
+            </summary>
+            <param name="peer"></param>
+        </member>
+        <member name="M:NetworkClientFrame.LiteClient.PeerDisconnectedEventListener(LiteNetLib.NetPeer,LiteNetLib.DisconnectInfo)">
+            <summary>
+            接收断线信息
+            </summary>
+            <param name="peer"></param>
+            <param name="disconnectInfo"></param>
+        </member>
+        <member name="M:NetworkClientFrame.GameClientEngine.OnConnectedListener(LiteNetLib.NetPeer,NetworkClientFrame.LiteClient)">
+            <summary>
+             连接服务器成功
+            </summary>
+            <param name="netPeer"></param>
+            <param name="liteClient"></param>
+        </member>
+        <member name="M:NetworkClientFrame.GameClientEngine.OnDisconnectedListener(LiteNetLib.NetPeer,NetworkClientFrame.LiteClient)">
+            <summary>
+            断开服务器
+            </summary>
+            <param name="netPeer"></param>
+            <param name="liteClient"></param>
+        </member>
+        <member name="M:NetworkClientFrame.GameClientEngine.OnReconnectedListener(LiteNetLib.NetPeer,NetworkClientFrame.LiteClient,System.Int32)">
+            <summary>
+            检测开始重连
+            </summary>
+            <param name="netPeer"></param>
+            <param name="liteClient"></param>
+            <param name="reconnectedCount"></param>
+        </member>
+        <member name="M:NetworkClientFrame.GameClientEngine.OnNetworkErrorListener(System.Net.Sockets.SocketError)">
+            <summary>
+            网络连接错误的回调
+            </summary>
+            <param name="socketError"></param>
+        </member>
+        <member name="M:NetworkClientFrame.GameClientEngine.OnPeerLatencyUpdateListener(LiteNetLib.NetPeer,System.Int32)">
+            <summary>
+            检测各个连接的Peer是否正常连接
+            </summary>
+            <param name="netPeer"></param>
+            <param name="latency"></param>
+        </member>
+    </members>
+</doc>

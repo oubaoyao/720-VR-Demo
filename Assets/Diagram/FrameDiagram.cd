@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MTFrame.BaseState">
+    <Position X="0.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAACAAAAAAGAAAAIAAAAAEAEAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Frame\State\BaseState.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StateManager">
+    <Position X="2.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Manager\StateManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTFrame.BaseGame" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAACABAAAEA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Frame\Game\BaseGame.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MTFrame.BaseProp" Collapsed="true">
+    <Position X="11" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAACAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Frame\Prop\BaseProp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTFrame.BaseTask" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAABAAAAAAABAAEAAAAIAAAAAEAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Frame\Task\BaseTask.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MTFrame.BaseButton" Collapsed="true">
+    <Position X="2" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAABAAAAAAAAIACCAgAQQAAgAIAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Frame\UI\Button\Base\BaseButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTFrame.GenericButton" Collapsed="true">
+    <Position X="0.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAIAgAJAAAAAAAAIAAAAAAgQAAgAAAAAQAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Frame\UI\Button\Generic\GenericButton.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MTFrame.MenuButton" Collapsed="true">
+    <Position X="3" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAIAgAJAAAAAAAAIAAAAAAgQAAgQAAAAQAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Frame\UI\Button\MenuButton.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MTFrame.BasePanel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAASAABAAAYAAAEQAQAAAAAAAAACAggAACABgQAEA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Frame\UI\Panel\Base\BasePanel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MTFrame.UIBasePanelTween" Collapsed="true">
+    <Position X="5.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAEAAAAAAAAAAAAAAAIAACAQAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Frame\UI\Tween\Base\UIBasePanelTween.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MTFrame.GradualTween" Collapsed="true">
+    <Position X="5.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAEAAAAAAAAAAAAAAAIAACAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Frame\UI\Tween\GradualTween.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseWindow" Collapsed="true">
+    <Position X="6.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAEA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Frame\UI\Window\BaseWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ForegroundScreenWindow" Collapsed="true">
+    <Position X="8.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Frame\UI\Window\ForegroundScreenWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ScreenWindow" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Frame\UI\Window\ScreenWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldWindow" Collapsed="true">
+    <Position X="6.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Frame\UI\Window\WorldWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="MTFrame.IPanelTween" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Frame\UI\Tween\Interface\IPanelTween.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FindTool">
+    <Position X="0.5" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABIAAEAAAAgAABABAAAAAAACCAAAQABAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\FindTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExtendTool">
+    <Position X="16" Y="8.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAgQEAAAgAg=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\Extend\ExtendTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Debuger">
+    <Position X="9.25" Y="0.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Debuger.LogData">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Projects\Scripts\Tools\Generic\Debuger.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>gAQBCAAAAAAEEAIAAHQAAAARpohCAEAASACCAABAAIA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\Generic\Debuger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimeDownObject" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAACAACAAAAAAAACQAAAAJAUCAogAAAACAAAI=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\Time\Data\TimeDownObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TimeTool" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAhAADEAIEEAAAAABAQAAABGAAAAQAAKAEECAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\Time\TimeTool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="JsonCheckTool" Collapsed="true">
+    <Position X="16" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAEAAAAAAAAAAAQAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\Extend\JsonCheckTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TweenAnimationCurveData" Collapsed="true">
+    <Position X="18" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\DOTween\Data\TweenAnimationCurveData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TweenAnimationInfo" Collapsed="true">
+    <Position X="19.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\DOTween\Data\TweenAnimationCurveData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TweenObject" Collapsed="true">
+    <Position X="16.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQAIACAAAEAAAIAAAAAAAAIQCAAAEAAAoAAAAgEAKAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\DOTween\Data\TweenObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DOTween" Collapsed="true">
+    <Position X="16.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEgAAAAACACAAQAEAAABAAAAAQABCAAAAAEA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\DOTween\DOTween.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DOCanvasGroup" Collapsed="true">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\DOTween\Extend\DOCanvasGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DORectTransform" Collapsed="true">
+    <Position X="18" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAGBBAABAAIAAAAUAAAAgAECAAgAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\DOTween\Extend\DORectTransform.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DOTransform" Collapsed="true">
+    <Position X="19.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAgAAIGDxAAAAAAgAAAQAAAAAARAARwAgAIAAAAE=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\DOTween\Extend\DOTransform.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChinarFileDlog" Collapsed="true">
+    <Position X="24.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAQBACAAAhEIBAEAQAAAJAAwEBBAQAAAAAAAU=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\FileDialog\ChinarFileDlog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OpenFileDlg" Collapsed="true">
+    <Position X="23" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\FileDialog\ChinarFileDlog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OpenFileDialog" Collapsed="true">
+    <Position X="29.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\FileDialog\ChinarFileDlog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SaveFileDialog" Collapsed="true">
+    <Position X="27.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\FileDialog\ChinarFileDlog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SaveFileDlg" Collapsed="true">
+    <Position X="25.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\FileDialog\ChinarFileDlog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileDialogTool" Collapsed="true">
+    <Position X="27.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAQAAgBAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\FileDialog\FileDialogTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Rect" Collapsed="true">
+    <Position X="0.75" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABARAQAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\JsonEncapsulationInfo\_Rect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Texture2D" Collapsed="true">
+    <Position X="2.5" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABABAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\JsonEncapsulationInfo\_Texture2D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Vector2" Collapsed="true">
+    <Position X="4.25" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABABAAAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\JsonEncapsulationInfo\_Vector2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Vector3" Collapsed="true">
+    <Position X="0.75" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABABAAAAAAAAAAAAAAAAAAABgAQAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\JsonEncapsulationInfo\_Vector3.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Vector4" Collapsed="true">
+    <Position X="2.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABABAAAAAAAAAAAAAAAAAAAhgAQAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\JsonEncapsulationInfo\_Vector4.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareSettingsTool">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAgABAAgIAAAAAAAEAAAAgAAAAACAAAAgACBAgAEI=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\SoftwareSettingsTool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MT.Key.MTKeyManager" Collapsed="true">
+    <Position X="36.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAIAAAAABAAAIQQCAAAACAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\Encryption\MTKey\Scripts\MTKeyManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MT.Key.CheckNumberInfo" Collapsed="true">
+    <Position X="36.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\Encryption\MTKey\Scripts\Tools\CheckNumberInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MT.Key.EncryptionManager" Collapsed="true">
+    <Position X="34.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACABABAAAAAAAAAAAAAAiAAAAAAAQAAAAAACAAIAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\Encryption\MTKey\SocketManager\EncryptionManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CheckNumber" Collapsed="true">
+    <Position X="34.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAQAAAABBAAAAABQCAAAiABAAgEBIAhAAIACAggAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\Encryption\MTKey\SocketManager\CheckNumber.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTFrame.Tool.ViKey.ViKeyManager" Collapsed="true">
+    <Position X="27" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAAAAAAAAAAAAACCIAIAAABAACIQQAAAAAGEIAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\Encryption\ViKey\ViKeyManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTFrame.Tool.ViKey.ViKeyData" Collapsed="true">
+    <Position X="27" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAABAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\Encryption\ViKey\ViKeyManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTFrame.Tool.ViKey.VikeyEncryptionInfo" Collapsed="true">
+    <Position X="28.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQACAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\Encryption\ViKey\ViKeyManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ContrastType" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAgAAAAAAAAAAAAAAAQQAgAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\Time\Data\TimeDownObject.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TimeDownType" Collapsed="true">
+    <Position X="0.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAIAAAAAAAAAAAAAAABEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\Time\Enum\TimeDownType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TimeDownMode" Collapsed="true">
+    <Position X="2.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\Time\Enum\TimeDownType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TweenType" Collapsed="true">
+    <Position X="18" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\DOTween\Data\TweenType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TweenMode" Collapsed="true">
+    <Position X="16.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\DOTween\DOTween.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="FileType" Collapsed="true">
+    <Position X="27.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIACAQAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\FileDialog\FileDialogTool.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TextureType" Collapsed="true">
+    <Position X="0.75" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAEAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\JsonEncapsulationInfo\_Texture2D.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MTKeyStateType" Collapsed="true">
+    <Position X="34.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAEAgAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\Encryption\MTKey\SocketManager\CheckNumber.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MTFrame.Tool.ViKey.VikeyEncryptionType" Collapsed="true">
+    <Position X="28.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQABAAAAAIAAAAgAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\Encryption\ViKey\ViKeyManager.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MTFrame.Tool.ViKey.LoginType" Collapsed="true">
+    <Position X="27" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAIAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\Encryption\ViKey\ViKeyManager.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MTFrame.Tool.ViKey.VikeyType" Collapsed="true">
+    <Position X="27" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAgAAAAAAAAAAAAAAAAAAAACAEAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\Encryption\ViKey\ViKeyManager.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="TimeCallEvent" Collapsed="true">
+    <Position X="0.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\Time\TimeTool.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="TweenLogicBehavior" Collapsed="true">
+    <Position X="16.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Projects\Scripts\Tools\DOTween\DOTween.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

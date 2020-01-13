@@ -1,0 +1,2 @@
+1、Main场景中将【PlayerManager】的勾打上
+2、Main脚本中Awake（）函数里，将KINECTManager.Instance.Init();的注释去掉
