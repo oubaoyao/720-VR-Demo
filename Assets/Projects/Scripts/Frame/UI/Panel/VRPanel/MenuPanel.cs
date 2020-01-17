@@ -19,6 +19,16 @@ public class MenuPanel : BasePanel
 
     public Sprite[] Sprite_weidianji,Sprite_dianji;
 
+    private Color Text_Color;
+
+    public TutorialPanel tutorialPanel;
+
+    protected override void Start()
+    {
+        base.Start();
+        TimeTool.Instance.AddDelayed(TimeDownType.NoUnityTimeLineImpact, 1.0f, () => { tutorialPanel.Open(); });
+    }
+
     public override void InitFind()
     {
         base.InitFind();
@@ -28,6 +38,10 @@ public class MenuPanel : BasePanel
 
         Sprite_weidianji = Resources.LoadAll<Sprite>("Button/weidianji");
         Sprite_dianji = Resources.LoadAll<Sprite>("Button/dianji");
+
+        Text_Color = MenuButton[0].transform.GetChild(0).GetComponent<Text>().color;
+
+        tutorialPanel = FindTool.FindChildComponent<TutorialPanel>(transform, "TutorialPanel");
     }
 
     public override void InitEvent()
@@ -40,16 +54,26 @@ public class MenuPanel : BasePanel
         }
 
         MenuButton[0].mOnClick.AddListener(() => {
+            if(!tutorialPanel.IsOpen)
             detailsPanel.SwitchJianjiePanel();
 
         });
 
         MenuButton[1].mOnClick.AddListener(() => {
-            detailsPanel.SwitchPanel(detailsPanel.OI_Sprite, "操作说明");
+            if (!tutorialPanel.IsOpen)
+                detailsPanel.SwitchPanel(detailsPanel.OI_Sprite, "操作说明");
         });
 
         MenuButton[2].mOnClick.AddListener(() => {
-            detailsPanel.SwitchPanel(detailsPanel.HuXing_Sprite, "户型选择");
+            if(tutorialPanel.IsTeaching)
+            {
+                if (tutorialPanel.IsOpen)
+                {
+                    tutorialPanel.IsTeach1 = true;
+                    tutorialPanel.Tutorial_2();
+                }
+                detailsPanel.SwitchPanel(detailsPanel.HuXing_Sprite, "户型选择");
+            }
         });
     }
 
@@ -58,11 +82,12 @@ public class MenuPanel : BasePanel
         base.Open();
         EventManager.RemoveUpdateListener(MTFrame.MTEvent.UpdateEventEnumType.Update, "MenuUpdate", MenuUpdate);
         EventManager.AddUpdateListener(MTFrame.MTEvent.UpdateEventEnumType.Update, "MenuUpdate", MenuUpdate);
+        SetPosition();
     }
 
     private void MenuUpdate(float timeProcess)
     {
-        if (Menu != null && Menu.GetStateUp(SteamVR_Input_Sources.Any))
+        if (Menu != null && Menu.GetStateUp(SteamVR_Input_Sources.Any) && !tutorialPanel.IsOpen)
         {
             if (IsOpen)
             {
@@ -75,7 +100,7 @@ public class MenuPanel : BasePanel
             SphereControl.Instance.Laser_OpenAndClose();
         }
 
-        if(IsOpen && detailsPanel.DetailsCanvasGroups[1].alpha > 0)
+        if(IsOpen && detailsPanel.DetailsCanvasGroups[1].alpha > 0 && tutorialPanel.Teach1 && tutorialPanel.IsTeaching)
         {
             if(TurnLeft!=null && TurnLeft.GetStateUp(SteamVR_Input_Sources.Any))
             {
@@ -102,14 +127,42 @@ public class MenuPanel : BasePanel
 
     private void Menu_Button_OnEnter(Transform transform,int number)
     {
-        transform.GetComponent<Image>().sprite = Sprite_dianji[number];
-        transform.GetChild(1).GetComponent<Image>().enabled = true;
+        if(tutorialPanel.IsTeaching)
+        {
+            if (tutorialPanel.IsOpen)
+            {
+                if (number == MenuButton.Length - 1)
+                {
+                    transform.GetComponent<Image>().sprite = Sprite_dianji[number];
+                    transform.GetChild(0).GetComponent<Text>().color = Color.white;
+                }
+            }
+            else
+            {
+                transform.GetComponent<Image>().sprite = Sprite_dianji[number];
+                transform.GetChild(0).GetComponent<Text>().color = Color.white;
+            }
+        }
     }
 
     private void Menu_Button_OnUp(Transform transform,int number)
     {
-        transform.GetComponent<Image>().sprite = Sprite_weidianji[number];
-        transform.GetChild(1).GetComponent<Image>().enabled = false;
+        if (tutorialPanel.IsTeaching)
+        {
+            if (tutorialPanel.IsOpen)
+            {
+                if (number == MenuButton.Length - 1)
+                {
+                    transform.GetComponent<Image>().sprite = Sprite_weidianji[number];
+                    transform.GetChild(0).GetComponent<Text>().color = Text_Color;
+                }
+            }
+            else
+            {
+                transform.GetComponent<Image>().sprite = Sprite_weidianji[number];
+                transform.GetChild(0).GetComponent<Text>().color = Text_Color;
+            }
+        }
     }
 
     public void SwitchSkyBox(string SkyBoxName)
@@ -141,6 +194,15 @@ public class MenuPanel : BasePanel
             Menu_Button_OnUp(vRButton.transform,number);
         });
     }
+
+    public void SetPosition()
+    {
+        Vector3 pos =  Camera.main.transform.position + Camera.main.transform.forward * 200;
+        Quaternion q2 = Quaternion.LookRotation(Camera.main.transform.forward);
+        SphereControl.Instance.CanvasTransform.transform.position = new Vector3(pos.x,0,pos.y);
+        SphereControl.Instance.CanvasTransform.transform.rotation = new Quaternion(0, q2.y, 0, q2.w);
+    }
+
 
 
     //public VRButton[] VRButtonGroup;

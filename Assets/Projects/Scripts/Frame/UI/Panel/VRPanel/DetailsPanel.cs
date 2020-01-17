@@ -136,6 +136,7 @@ public class DetailsPanel : BasePanel
     private void ButtonAnimation(Transform transform)
     {
         transform.localScale = new Vector3(ScaleRatio, ScaleRatio, ScaleRatio);
+        
     }
 
     private void Reset_Button_Scale(Transform transform)

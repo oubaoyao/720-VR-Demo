@@ -12,7 +12,7 @@ public class WaitPanel : BasePanel
 
     public Transform WaiQuan, NeiQuan, Center;
 
-    private float RotaSpeed = 2.0f;
+    private float RotaSpeed = 3.0f;
 
     public Image image;
 

@@ -21,6 +21,8 @@ public class SphereControl : MonoBehaviour
 
     public Texture WaitBgSkyBox;
 
+    public Transform CanvasTransform;
+
     private void Awake()
     {
         Instance = this;
