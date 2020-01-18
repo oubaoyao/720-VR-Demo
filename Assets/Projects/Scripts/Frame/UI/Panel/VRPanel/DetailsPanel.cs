@@ -88,45 +88,51 @@ public class DetailsPanel : BasePanel
         detailsItem.Display_Button.RightSteamVrLaserPointer = SphereControl.Instance.RightsteamVR_LaserPointer;
 
         detailsItem.Left_Button.mOnEnter.AddListener(() => {
-            ButtonAnimation(detailsItem.Left_Button.transform);
+            if (!menuPanel.tutorialPanel.IsOpen)
+                ButtonAnimation(detailsItem.Left_Button.transform);
         });
 
         detailsItem.Left_Button.mOnClick.AddListener(() => {
-            Previous_Page();
+            if (!menuPanel.tutorialPanel.IsOpen)
+                Previous_Page();
         });
 
         detailsItem.Left_Button.mOnUp.AddListener(() => {
-            Reset_Button_Scale(detailsItem.Left_Button.transform);
+            if (!menuPanel.tutorialPanel.IsOpen)
+                Reset_Button_Scale(detailsItem.Left_Button.transform);
         });
 
         detailsItem.Right_Button.mOnEnter.AddListener(() => {
-            ButtonAnimation(detailsItem.Right_Button.transform);
+            if (!menuPanel.tutorialPanel.IsOpen)
+                ButtonAnimation(detailsItem.Right_Button.transform);
         });
 
         detailsItem.Right_Button.mOnClick.AddListener(() => {
-            Next_Page();
+            if (!menuPanel.tutorialPanel.IsOpen)
+                Next_Page();
         });
 
         detailsItem.Right_Button.mOnUp.AddListener(() => {
+            if(!menuPanel.tutorialPanel.IsOpen)
             Reset_Button_Scale(detailsItem.Right_Button.transform);
         });
 
         detailsItem.Display_Button.mOnEnter.AddListener(() => {
-            if(Is_Open_Huxing)
+            if(Is_Open_Huxing && !menuPanel.tutorialPanel.IsOpen)
             {
                 detailsItem.Display_Button.transform.GetComponent<Image>().color = Color.red;
             }
         });
 
         detailsItem.Display_Button.mOnClick.AddListener(() => {
-            if (Is_Open_Huxing)
+            if (Is_Open_Huxing && !menuPanel.tutorialPanel.IsOpen)
             {
                 menuPanel.SwitchSkyBox(detailsItem.DisplayImage.sprite.name);
             }
         });
 
         detailsItem.Display_Button.mOnUp.AddListener(() => {
-            if (Is_Open_Huxing)
+            if (Is_Open_Huxing && !menuPanel.tutorialPanel.IsOpen)
             {
                 detailsItem.Display_Button.transform.GetComponent<Image>().color = Color.white;
             }
@@ -135,13 +141,15 @@ public class DetailsPanel : BasePanel
 
     private void ButtonAnimation(Transform transform)
     {
+        if(!menuPanel.tutorialPanel.IsOpen)
         transform.localScale = new Vector3(ScaleRatio, ScaleRatio, ScaleRatio);
         
     }
 
     private void Reset_Button_Scale(Transform transform)
     {
-        transform.localScale = new Vector3(1, 1, 1);
+        if (!menuPanel.tutorialPanel.IsOpen)
+            transform.localScale = new Vector3(1, 1, 1);
     }
 
     private void Reset()
